@@ -13,7 +13,6 @@ services:
       - "27017:27017"
     volumes:
       - mongodb_data:/data/db
-      - ./init.sql:/docker-entrypoint-initdb.d/init.js
     networks:
       - clinic_network
 
@@ -27,16 +26,14 @@ services:
       - NODE_ENV=production
       - PORT=5000
       - MONGODB_URI=mongodb://admin:admin123@mongodb:27017/family_clinic?authSource=admin
-      - JWT_SECRET=your_production_jwt_secret_change_this_in_production
-      - FRONTEND_URL=http://localhost:5173
+      - JWT_SECRET=your_production_jwt_secret_change_this
+      - FRONTEND_URL=http://localhost:3000
     ports:
       - "5000:5000"
     depends_on:
       - mongodb
     networks:
       - clinic_network
-    command: >
-      sh -c "sleep 10 && npm run seed && npm start"
 
   frontend:
     build:
@@ -47,7 +44,7 @@ services:
     environment:
       - VITE_API_URL=http://localhost:5000
     ports:
-      - "5173:80"
+      - "3000:80"
     depends_on:
       - backend
     networks:
