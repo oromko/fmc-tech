@@ -1,0 +1,336 @@
+{
+  "lab_tests": [
+    {
+      "testCode": "HEM001",
+      "testName": "Complete Blood Count (CBC)",
+      "category": "Hematology",
+      "specimenType": "Blood - EDTA",
+      "turnaroundTime": 2,
+      "cost": 25.00,
+      "referenceRanges": {
+        "WBC": { "min": 4.5, "max": 11.0, "unit": "x10^9/L" },
+        "RBC": { "min": 4.5, "max": 5.5, "unit": "x10^12/L", "gender": "male" },
+        "RBC_female": { "min": 4.0, "max": 5.0, "unit": "x10^12/L", "gender": "female" },
+        "Hemoglobin": { "min": 13.5, "max": 17.5, "unit": "g/dL", "gender": "male" },
+        "Hemoglobin_female": { "min": 12.0, "max": 15.5, "unit": "g/dL", "gender": "female" },
+        "Hematocrit": { "min": 41, "max": 50, "unit": "%" },
+        "Platelets": { "min": 150, "max": 400, "unit": "x10^9/L" }
+      },
+      "criticalValues": {
+        "WBC": { "low": 2.0, "high": 30.0 },
+        "Hemoglobin": { "low": 7.0, "high": 20.0 },
+        "Platelets": { "low": 50, "high": 1000 }
+      }
+    },
+    {
+      "testCode": "HEM002",
+      "testName": "Hemoglobin A1c",
+      "category": "Hematology",
+      "specimenType": "Blood - EDTA",
+      "turnaroundTime": 4,
+      "cost": 35.00,
+      "referenceRanges": {
+        "HbA1c": { "min": 4.0, "max": 5.6, "unit": "%" }
+      },
+      "criticalValues": {
+        "HbA1c": { "low": 3.0, "high": 14.0 }
+      }
+    },
+    {
+      "testCode": "HEM003",
+      "testName": "Prothrombin Time (PT/INR)",
+      "category": "Hematology",
+      "specimenType": "Blood - Citrate",
+      "turnaroundTime": 1,
+      "cost": 20.00,
+      "referenceRanges": {
+        "PT": { "min": 11.0, "max": 13.5, "unit": "seconds" },
+        "INR": { "min": 0.8, "max": 1.2, "unit": "" }
+      },
+      "criticalValues": {
+        "INR": { "low": 0.5, "high": 5.0 }
+      }
+    },
+    {
+      "testCode": "CHEM001",
+      "testName": "Basic Metabolic Panel",
+      "category": "Chemistry",
+      "specimenType": "Serum",
+      "turnaroundTime": 2,
+      "cost": 30.00,
+      "referenceRanges": {
+        "Glucose": { "min": 70, "max": 100, "unit": "mg/dL" },
+        "BUN": { "min": 7, "max": 20, "unit": "mg/dL" },
+        "Creatinine": { "min": 0.6, "max": 1.2, "unit": "mg/dL" },
+        "Sodium": { "min": 136, "max": 145, "unit": "mEq/L" },
+        "Potassium": { "min": 3.5, "max": 5.0, "unit": "mEq/L" },
+        "Chloride": { "min": 98, "max": 106, "unit": "mEq/L" },
+        "CO2": { "min": 23, "max": 29, "unit": "mEq/L" }
+      },
+      "criticalValues": {
+        "Glucose": { "low": 40, "high": 500 },
+        "Potassium": { "low": 2.5, "high": 6.5 },
+        "Sodium": { "low": 120, "high": 160 }
+      }
+    },
+    {
+      "testCode": "CHEM002",
+      "testName": "Comprehensive Metabolic Panel",
+      "category": "Chemistry",
+      "specimenType": "Serum",
+      "turnaroundTime": 2,
+      "cost": 45.00,
+      "referenceRanges": {
+        "Glucose": { "min": 70, "max": 100, "unit": "mg/dL" },
+        "BUN": { "min": 7, "max": 20, "unit": "mg/dL" },
+        "Creatinine": { "min": 0.6, "max": 1.2, "unit": "mg/dL" },
+        "Sodium": { "min": 136, "max": 145, "unit": "mEq/L" },
+        "Potassium": { "min": 3.5, "max": 5.0, "unit": "mEq/L" },
+        "Chloride": { "min": 98, "max": 106, "unit": "mEq/L" },
+        "CO2": { "min": 23, "max": 29, "unit": "mEq/L" },
+        "Calcium": { "min": 8.5, "max": 10.5, "unit": "mg/dL" },
+        "Total Protein": { "min": 6.0, "max": 8.3, "unit": "g/dL" },
+        "Albumin": { "min": 3.5, "max": 5.0, "unit": "g/dL" },
+        "ALT": { "min": 7, "max": 56, "unit": "U/L" },
+        "AST": { "min": 10, "max": 40, "unit": "U/L" },
+        "Alkaline Phosphatase": { "min": 44, "max": 147, "unit": "U/L" },
+        "Bilirubin_Total": { "min": 0.1, "max": 1.2, "unit": "mg/dL" }
+      },
+      "criticalValues": {
+        "Calcium": { "low": 6.0, "high": 14.0 },
+        "ALT": { "low": 0, "high": 1000 },
+        "Bilirubin_Total": { "low": 0, "high": 20.0 }
+      }
+    },
+    {
+      "testCode": "CHEM003",
+      "testName": "Lipid Panel",
+      "category": "Chemistry",
+      "specimenType": "Serum",
+      "turnaroundTime": 2,
+      "cost": 35.00,
+      "referenceRanges": {
+        "Total Cholesterol": { "min": 0, "max": 200, "unit": "mg/dL" },
+        "LDL": { "min": 0, "max": 100, "unit": "mg/dL" },
+        "HDL": { "min": 40, "max": 60, "unit": "mg/dL", "gender": "male" },
+        "HDL_female": { "min": 50, "max": 60, "unit": "mg/dL", "gender": "female" },
+        "Triglycerides": { "min": 0, "max": 150, "unit": "mg/dL" }
+      },
+      "criticalValues": {
+        "Triglycerides": { "low": 0, "high": 1000 }
+      }
+    },
+    {
+      "testCode": "CHEM004",
+      "testName": "Thyroid Function Tests",
+      "category": "Chemistry",
+      "specimenType": "Serum",
+      "turnaroundTime": 4,
+      "cost": 55.00,
+      "referenceRanges": {
+        "TSH": { "min": 0.4, "max": 4.0, "unit": "mIU/L" },
+        "Free T4": { "min": 0.8, "max": 1.8, "unit": "ng/dL" },
+        "Free T3": { "min": 2.3, "max": 4.2, "unit": "pg/mL" }
+      },
+      "criticalValues": {
+        "TSH": { "low": 0.01, "high": 100.0 }
+      }
+    },
+    {
+      "testCode": "CHEM005",
+      "testName": "Cardiac Enzymes",
+      "category": "Chemistry",
+      "specimenType": "Serum",
+      "turnaroundTime": 1,
+      "cost": 65.00,
+      "referenceRanges": {
+        "Troponin I": { "min": 0, "max": 0.04, "unit": "ng/mL" },
+        "CK-MB": { "min": 0, "max": 5.0, "unit": "ng/mL" }
+      },
+      "criticalValues": {
+        "Troponin I": { "low": 0, "high": 10.0 }
+      }
+    },
+    {
+      "testCode": "URINE001",
+      "testName": "Urinalysis Complete",
+      "category": "Urinalysis",
+      "specimenType": "Urine",
+      "turnaroundTime": 1,
+      "cost": 15.00,
+      "referenceRanges": {
+        "Color": { "normal": "Yellow" },
+        "Clarity": { "normal": "Clear" },
+        "pH": { "min": 4.5, "max": 8.0, "unit": "" },
+        "Specific Gravity": { "min": 1.003, "max": 1.030, "unit": "" },
+        "Protein": { "normal": "Negative" },
+        "Glucose": { "normal": "Negative" },
+        "Ketones": { "normal": "Negative" },
+        "Blood": { "normal": "Negative" },
+        "Nitrites": { "normal": "Negative" },
+        "Leukocytes": { "normal": "Negative" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "MICRO001",
+      "testName": "Blood Culture",
+      "category": "Microbiology",
+      "specimenType": "Blood",
+      "turnaroundTime": 72,
+      "cost": 85.00,
+      "referenceRanges": {
+        "Result": { "normal": "No growth" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "MICRO002",
+      "testName": "Urine Culture",
+      "category": "Microbiology",
+      "specimenType": "Urine",
+      "turnaroundTime": 48,
+      "cost": 55.00,
+      "referenceRanges": {
+        "Result": { "normal": "No significant growth" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "MICRO003",
+      "testName": "Gram Stain",
+      "category": "Microbiology",
+      "specimenType": "Various",
+      "turnaroundTime": 2,
+      "cost": 25.00,
+      "referenceRanges": {
+        "Result": { "normal": "No organisms seen" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMMUNO001",
+      "testName": "Hepatitis B Surface Antigen",
+      "category": "Immunology",
+      "specimenType": "Serum",
+      "turnaroundTime": 4,
+      "cost": 45.00,
+      "referenceRanges": {
+        "HBsAg": { "normal": "Non-reactive" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMMUNO002",
+      "testName": "Hepatitis C Antibody",
+      "category": "Immunology",
+      "specimenType": "Serum",
+      "turnaroundTime": 4,
+      "cost": 50.00,
+      "referenceRanges": {
+        "Anti-HCV": { "normal": "Non-reactive" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMMUNO003",
+      "testName": "HIV 1/2 Antibody",
+      "category": "Immunology",
+      "specimenType": "Serum",
+      "turnaroundTime": 4,
+      "cost": 40.00,
+      "referenceRanges": {
+        "Anti-HIV": { "normal": "Non-reactive" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMMUNO004",
+      "testName": "C-Reactive Protein (CRP)",
+      "category": "Immunology",
+      "specimenType": "Serum",
+      "turnaroundTime": 2,
+      "cost": 25.00,
+      "referenceRanges": {
+        "CRP": { "min": 0, "max": 10.0, "unit": "mg/L" }
+      },
+      "criticalValues": {
+        "CRP": { "low": 0, "high": 200.0 }
+      }
+    },
+    {
+      "testCode": "IMMUNO005",
+      "testName": "Procalcitonin",
+      "category": "Immunology",
+      "specimenType": "Serum",
+      "turnaroundTime": 2,
+      "cost": 75.00,
+      "referenceRanges": {
+        "PCT": { "min": 0, "max": 0.25, "unit": "ng/mL" }
+      },
+      "criticalValues": {
+        "PCT": { "low": 0, "high": 100.0 }
+      }
+    },
+    {
+      "testCode": "IMG001",
+      "testName": "Chest X-Ray",
+      "category": "Imaging",
+      "specimenType": "N/A",
+      "turnaroundTime": 24,
+      "cost": 75.00,
+      "referenceRanges": {
+        "Result": { "normal": "No acute cardiopulmonary process" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMG002",
+      "testName": "Abdominal Ultrasound",
+      "category": "Imaging",
+      "specimenType": "N/A",
+      "turnaroundTime": 24,
+      "cost": 150.00,
+      "referenceRanges": {
+        "Result": { "normal": "No abnormalities detected" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMG003",
+      "testName": "CT Head",
+      "category": "Imaging",
+      "specimenType": "N/A",
+      "turnaroundTime": 24,
+      "cost": 400.00,
+      "referenceRanges": {
+        "Result": { "normal": "No acute intracranial abnormality" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMG004",
+      "testName": "MRI Brain",
+      "category": "Imaging",
+      "specimenType": "N/A",
+      "turnaroundTime": 48,
+      "cost": 800.00,
+      "referenceRanges": {
+        "Result": { "normal": "No acute abnormality" }
+      },
+      "criticalValues": {}
+    },
+    {
+      "testCode": "IMG005",
+      "testName": "ECG",
+      "category": "Imaging",
+      "specimenType": "N/A",
+      "turnaroundTime": 1,
+      "cost": 50.00,
+      "referenceRanges": {
+        "Result": { "normal": "Normal sinus rhythm" }
+      },
+      "criticalValues": {}
+    }
+  ]
+}
